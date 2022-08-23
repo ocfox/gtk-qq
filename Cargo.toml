@@ -6,16 +6,6 @@ edition = "2021"
 [workspace]
 members = ["./libs/*"]
 
-[dependencies.relm4]
-git = "https://github.com/Relm4/Relm4.git"
-# next, 2022/05/30
-rev = "144f48319ffd7a889f28853df00e802cfc97dc26"
-features = ["macros", "libadwaita"]
-
-[dependencies.ricq]
-git = "https://github.com/lz1998/ricq.git"
-# v0.1.10, master, 2022/06/08
-rev = "38fff7007cb51bc39acc30087c3f042031a38eda"
 
 [dependencies.widgets]
 path = "./libs/widgets"
@@ -34,6 +24,8 @@ qrcode-png = "0.4.0"
 typed-builder = "0.10"
 bincode = "1.3.3"
 base64 = "0.13.0"
+relm4 = { version = "0.4.4", features = ["macros", "libadwaita"]}
+ricq = "0.1.15"
 
 [profile.release]
 lto = true
